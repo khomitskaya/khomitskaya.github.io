@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анекдот про просування</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0fff0; /* Світло-зелений або інший приємний колір */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .joke-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 2em;
+            color: #2e8b57; /* Зелений колір */
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #228b22;
+        }
+    </style>
+</head>
+<body>
+    <div class="joke-container">
+        <h2>Кумедний анекдот про просування</h2>
+        <p>Зустрічаються два маркетологи.</p>
+        <p>Перший: Як твої продажі?</p>
+        <p>Другий: Знаєш, як у космосі. Спочатку нуль, а потім ракета!</p>
+        <p>Перший: Ого, круто! І що, вже ракета?</p>
+        <p>Другий: Та ні, поки що знову нуль...</p>
+        <button id="goBack">Повернутися на головну</button>
+    </div>
+
+    <script>
+        const goBackButton = document.getElementById('goBack');
+
+        goBackButton.addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

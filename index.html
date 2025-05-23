@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вітання</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #e0b0ff; /* Ніжно фіолетовий */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #6a0dad; /* Темно-фіолетовий */
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            background-color: #6a0dad;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #4a008c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Вітаємо!</h1>
+        <button id="goToJoke">Перейти до анекдоту</button>
+    </div>
+
+    <script>
+        const goToJokeButton = document.getElementById('goToJoke');
+
+        goToJokeButton.addEventListener('click', function() {
+            window.location.href = 'joke.html';
+        });
+    </script>
+</body>
+</html>
